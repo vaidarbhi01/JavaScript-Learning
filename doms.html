@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>
+        DOM....
+    </title>
+</head>
+  <body>
+    <div id = "myID"> Welcome in 1st div</div>
+    <div id = "enterID">Put data</div>
+    <div class = "myClass">Welcome in 1st Class</div>
+    <div class = "myClass">Welcome Vaidarbhi</div>
+        <script type = "text/javascript">
+            //DOM-- Document Object Methods
+
+            //get data from HTML
+            var a = document.getElementById("myID").innerHTML; // generate object from id and store it in a / innerHTML works for remove div in console and only print content under div clause.
+            console.log(a);
+
+            //put data in HTML
+            document.getElementById("enterID").innerHTML = "<h1> Vaidarbhi </h1>"
+
+            var x = document.getElementsByClassName("myClass")[0].innerHTML; //[0].innerHTML means we decide which classes we target.
+            console.log(x);
+            alert(x);
+        </script>
+    </body>
+
+</html>
+
