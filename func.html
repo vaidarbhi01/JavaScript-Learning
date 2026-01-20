@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>
+            Functions
+        </title>
+        <body>
+            <input type="text" , name = "Name" , id="myName">
+            <button onclick="myGreetings()">
+                Welcome
+            </button>
+            <div class ="greetClass"></div>
+        </body>
+        <script type="text/javascript">
+            function myGreetings(){
+               var name = document.getElementById('myName').value;
+               var greetString = "Hello "+name;
+               document.getElementsByClassName('greetClass')[0].innerHTML = greetString;
+            }
+        </script>
+    </head>
+</html>
