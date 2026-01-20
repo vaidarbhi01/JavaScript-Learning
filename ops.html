@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            Operators
+        </title>
+    </head>
+    <body>
+        <div id="count" style="margin: 50px auto; width: 300px;"></div>
+        <div id="inc" style="margin: 50px auto; width: 300px;"></div>
+        <div id="comp" style="margin: 50px auto; width: 300px;"></div>
+        <div id="log" style="margin: 50px auto; width: 300px;"></div>
+        <div id="turn" style="margin: 50px auto; width: 300px;"></div>
+        <div id="assign" style="margin: 50px auto; width: 300px;"></div>
+    </body>
+    <script type = "text/javascript">
+        var a = 1;
+        var b = 7;
+        var count = a + b; // a-b,a*b,a/b,a%b
+        document.getElementById("count").innerHTML=count;
+
+        var v = 17;
+        v++; // v--
+        document.getElementById("inc").innerHTML=v;
+
+        var i = 2;
+        var j = 9;
+        var count = i == j; // i!=j,i<j,i>j,i<=j,i>=j
+        document.getElementById("comp").innerHTML=count;
+
+        var x = 0;
+        var y = 1;
+        var count = x && y; // x||y
+        document.getElementById("log").innerHTML=count;
+
+        var numb1 = 5;
+        var numb2 = 10;
+        var turnery = numb1 < numb2 ? "Yes condition met" : "Better luck next time";
+        document.getElementById("turn").innerHTML=turnery;
+
+        var k = 8;
+        var l = 2;
+        l += k; //l-=k,l*=k,l/=k,l%=k
+        document.getElementById("assign").innerHTML=l;
+
+    </script>
+
+</html>
